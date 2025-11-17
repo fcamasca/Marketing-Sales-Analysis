@@ -44,9 +44,7 @@ Marketing Sales Analysis/
 │
 ├── reports/
 │   ├── marketing_sales_analysis.pdf
-│   ├── PACE - Marketing Sales.docx
 │   ├── PACE-Marketing_Sales.pdf
-│   ├── Resumen Ejecutivo.pptx
 │   └── Resumen_Ejecutivo.pdf
 │
 ├── images/
@@ -67,10 +65,10 @@ Marketing Sales Analysis/
 
 | Tipo | Archivo |
 |------|---------|
-| 📘 Notebook interactivo | notebooks/marketing_sales_analysis.ipynb |
-| 📄 PACE (Metodología) | reports/PACE-Marketing_Sales.pdf |
-| 📊 Resumen Ejecutivo | reports/Resumen_Ejecutivo.pdf |
-| 🗂 Dataset | data/marketing_sales_data.csv |
+| 📘 Notebook interactivo | notebooks/marketing_sales_analysis.ipynb (notebooks/marketing_sales_analysis.ipynb)|
+| 📄 PACE (Metodología) | reports/PACE-Marketing_Sales.pdf (reports/PACE-Marketing_Sales.pdf)|
+| 📊 Resumen Ejecutivo | reports/Resumen_Ejecutivo.pdf (reports/Resumen_Ejecutivo.pdf)|
+| 🗂 Dataset | data/marketing_sales_data.csv (data/marketing_sales_data.csv)|
 
 ---
 
