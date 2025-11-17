@@ -3,38 +3,49 @@
 
 ![Status](https://img.shields.io/badge/EDA-Complete-brightgreen)
 ![Model](https://img.shields.io/badge/Model-LinearRegression-blue)
+![Python](https://img.shields.io/badge/Python-3.10+-blue)
+![Last Update](https://img.shields.io/badge/Last_Update-2025-lightgrey)
 
 ---
 
 ## 🧠 Sobre el Proyecto
 
-Este proyecto analiza cómo diferentes inversiones en marketing se relacionan con las ventas, buscando identificar **qué canal tiene mayor impacto en los resultados comerciales**.
+Este proyecto analiza cómo diferentes inversiones en marketing se relacionan con las ventas, con el objetivo de **identificar el canal con mayor impacto comercial**.  
+El análisis está diseñado para un entorno profesional, siguiendo un enfoque orientado a decisiones.
 
-El proceso incluyó:
+El trabajo incluye:
 
-- Exploración de patrones y correlaciones entre medios.
-- Visualización de relaciones clave mediante gráficos comparativos.
-- Construcción de un modelo de regresión lineal.
-- Validación de supuestos estadísticos del modelo.
-- Presentación ejecutiva mediante un one‑pager y documentos PACE.
+- Exploración visual del dataset  
+- Identificación de patrones iniciales entre medios y ventas  
+- Construcción de un modelo de regresión lineal  
+- Validación de supuestos estadísticos  
+- Documentación ejecutiva en formato PACE y One-Pager  
 
-El análisis identificó un medio con **impacto fuerte y estadísticamente significativo**, explicando más del **75%** de la variación en ventas.
+El modelo final identifica un medio con **impacto fuerte, directo y estadísticamente significativo**, explicando más del **75%** de la variación en ventas.
+
+---
+
+## 🔑 Insight Clave
+
+> **Un canal publicitario destaca como el principal predictor de ventas, mostrando una relación lineal sólida y consistente.**
+
+Esto respalda decisiones estratégicas para redistribuir el presupuesto hacia medios más rentables.
 
 ---
 
 ## 📊 Principales Resultados
 
-- Un canal publicitario muestra **relación lineal positiva muy sólida** con las ventas.
-- El modelo arroja **R² = 0.757**, indicando alta capacidad explicativa.
-- La relación cumple supuestos de linealidad, normalidad, independencia y homocedasticidad.
-- Otros medios presentan correlaciones más débiles o dispersas.
+- **R² = 0.757** → Alta capacidad explicativa del modelo.  
+- El canal más influyente presenta una **relación lineal positiva clara** con las ventas.  
+- Se validan todos los supuestos: linealidad, normalidad, independencia y homocedasticidad.  
+- Otros medios presentan correlaciones menores o más dispersas.
 
 ---
 
 ## 🗂️ Estructura del Repositorio
 
 ```
-Marketing Sales Analysis/
+Marketing-Sales-Analysis/
 │
 ├── data/
 │   └── marketing_sales_data.csv
@@ -65,22 +76,45 @@ Marketing Sales Analysis/
 
 | Tipo | Archivo |
 |------|---------|
-| 📘 Notebook interactivo | [marketing_sales_analysis.ipynb](notebooks/marketing_sales_analysis.ipynb)|
-| 📄 PACE (Metodología) | [PACE-Marketing_Sales.pdf](reports/PACE-Marketing_Sales.pdf)|
-| 📊 Resumen Ejecutivo | [Resumen_Ejecutivo.pdf](reports/Resumen_Ejecutivo.pdf)|
-| 🗂 Dataset | [marketing_sales_data.csv](data/marketing_sales_data.csv)|
+| 📘 Notebook interactivo | notebooks/marketing_sales_analysis.ipynb |
+| 📄 PACE (Metodología) | reports/PACE-Marketing_Sales.pdf |
+| 📊 Resumen Ejecutivo | reports/Resumen_Ejecutivo.pdf |
+| 🗂 Dataset | data/marketing_sales_data.csv |
+
+---
+
+## 🔧 Cómo Ejecutar el Proyecto
+
+1. **Clonar el repositorio**
+   ```bash
+   git clone https://github.com/fcamasca/Marketing-Sales-Analysis.git
+   ```
+2. **Crear un entorno virtual (opcional)**
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  # Linux/Mac
+   venv\Scripts\activate     # Windows
+   ```
+3. **Instalar dependencias**
+   ```bash
+   pip install -r requirements.txt
+   ```
+4. **Abrir el notebook**
+   ```bash
+   jupyter notebook notebooks/marketing_sales_analysis.ipynb
+   ```
 
 ---
 
 ## 🧪 Tecnologías y Librerías
 
-- Python 3
-- Pandas
-- NumPy
-- Matplotlib
-- Seaborn
-- Statsmodels
-- Jupyter Notebook
+- Python 3  
+- Pandas  
+- NumPy  
+- Matplotlib  
+- Seaborn  
+- Statsmodels  
+- Jupyter Notebook  
 
 Requisitos completos en  
 📦 **requirements.txt**
@@ -89,26 +123,27 @@ Requisitos completos en
 
 ## 📈 Visualizaciones
 
-### 🔹 Pairplot — Relaciones entre variables de marketing
+### 🔹 Pairplot — Relaciones iniciales entre variables de marketing  
 <img src="images/dispersion_por_pares.png" width="450px">
 
-**Muestra patrones de correlación iniciales entre canales y ventas.**
+**Explora patrones de correlación entre medios y ventas.**
 
 ---
 
-### 🔹 Regresión Lineal — Canal con mayor impacto
+### 🔹 Regresión Lineal — Canal con mayor impacto  
 <img src="images/linea_de_regresion.png" width="450px">
 
-**Evidencia una relación lineal fuerte y consistente con las ventas.**
+**Relación lineal fuerte, estable y estadísticamente significativa.**
 
 ---
 
 ## 🚀 Próximos Pasos
 
-- Ampliar el análisis hacia un modelo multivariable.
-- Evaluar interacciones entre medios y efectos combinados.
-- Probar modelos no lineales o machine learning para comparación.
-- Construir un dashboard simple de experimentación presupuestal.
+- Ampliar el análisis hacia un modelo multivariable.  
+- Evaluar interacciones entre canales publicitarios.  
+- Analizar sensibilidad ante incrementos presupuestales.  
+- Probar modelos no lineales como Random Forest o GAM.  
+- Construir un dashboard interactivo para simulación de inversiones.  
 
 ---
 
@@ -117,5 +152,10 @@ Requisitos completos en
 **Frankz Camasca**  
 Analista de Datos | Data Analytics & Predictive Modeling  
 
-[![GitHub](https://img.shields.io/badge/GitHub-%40fcamasca-black?logo=github)](https://github.com/fcamasca)
+[![GitHub](https://img.shields.io/badge/GitHub-%40fcamasca-black?logo=github)](https://github.com/fcamasca)  
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Frankz%20Camasca-blue?logo=linkedin)](https://www.linkedin.com/in/frankz-william-camasca-castillo-b63a0094)
+
+---
+
+## 📄 Licencia
+Este proyecto es de uso libre para fines educativos y demostración profesional.
